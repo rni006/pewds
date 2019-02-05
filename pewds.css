@@ -1,0 +1,43 @@
+h3{
+	align-content: center;
+}
+
+body{
+	background-image: url(60.jpg);
+  text-align: center;
+	color: white;
+	overflow: hidden;
+}
+
+nav ul {
+	border-radius: 2px;
+	background: black;
+}
+
+nav ul li{
+	position: left;
+	display: inline-block;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	text-align: right;
+}
+
+.container {
+	background: black;
+	border-radius: 2px;
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+
+img {
+  max-width: 100vw !important;
+} 
+
