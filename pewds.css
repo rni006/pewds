@@ -3,34 +3,37 @@ h3{
 }
 
 body{
-	background-image: url(60.jpg);
+	background-image: url(70.jpg);
+	background-position: center;
+	background-size: cover;
   	text-align: center;
 	color: white;
-	overflow: hidden;
 	margin: 0%;
 }
 
+/* NAVIGATION */
+
 nav {
     width: 100%;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-bottom:3%;
 	text-align: center;
 }
 
 nav ul li {
     list-style-type: none;
-    display: inline;
+	display: inline;
 }
 
 nav ul li a {
     font-family: calibri;
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-decoration: none;
     color: white;
-    border-bottom: solid 1px rgb(0, 0, 0);
-    margin: 1%;
+	border-bottom: solid 2px rgb(0, 0, 0);
+	margin: 0;
     background-color: transparent;
-    padding: 2%;
+    padding: 1%;
 	padding-top: 2%;
 }
 
@@ -39,6 +42,9 @@ nav ul li a:hover {
     color: pink; 
 }
 
+ul{
+	padding: 0;
+}
 
 /* CONTAINER - MAIN PAGE CONTENT */
 
@@ -50,24 +56,25 @@ nav ul li a:hover {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 
-img {
-  width: 100;
-} 
+img{
+	width: 100%;
+}
+
 
 @media (min-width: 600px){
 	.container{
 		width: 80%;
-		height: 100%
+		height: auto;
 	}
 }
 
 @media (min-width: 1280px){
 	.container{
 		width: 75%;
-		height: 100%;
+		height: auto;
 	}
 }
