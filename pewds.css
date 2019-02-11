@@ -49,7 +49,7 @@ ul{
 /* CONTAINER - MAIN PAGE CONTENT */
 
 .container {
-	background: black;
+	background: white;
 	border-radius: 2px;
 	display: inline-block;
 	position: relative;
@@ -59,6 +59,9 @@ ul{
 	height: auto;
 }
 
+iframe{
+	pointer-events: none;
+}
 
 img{
 	width: 100%;

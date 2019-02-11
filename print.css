@@ -17,7 +17,50 @@ body {
     font-family: Poppins;
     font-weight: 400;
 }
+.container-main {
+	display: grid;
+    grid-template-areas: 
+    "navigation navigation" 
+    "text picture" 
+    "text piture";
+	grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
 
+.content{
+    display: grid;
+    grid-template-areas:
+    "firstbox secondbox thirdbox";
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+ nav{
+     grid-area: navigation;
+ }
+  
+  #maintext {
+    grid-area: text;
+    text-align: center;
+  }
+
+  #mainpicpic {
+    grid-area: picture;
+  }
+  #fistbox{
+      grid-area: firstbox;
+  }
+  #secondbox{
+      grid-area: secondbox;
+  }
+  #thirdbox{
+      grid-area: thirdbox;
+  }
+
+  #home{
+      width: 100%;
+  }
 /* NAVIGATION AND LOGO */
 
 nav {
@@ -46,6 +89,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
+    /* margin-bottom: 1em; */
 }
 
 nav ul li:not(:first-child) {
@@ -106,18 +150,6 @@ nav ul li a {
 
 #maintext h1{
     color: #4285f4;
-    text-align: center;
-}
-
-#maintext p{
-
-}
-
-
-#home{
-    float: right;
-    height: 50%;
-    width: 50%;
 }
 
 
@@ -152,7 +184,7 @@ nav ul li a {
         float: none;
         width: 100%;
         text-align: right;
-        margin-bottom: 10px;
+        margin-bottom: 1em;
     }
 
     .nav-wrapper ul li:nth-child(1) a {
@@ -219,4 +251,23 @@ nav ul li a {
     .nav-btn i:nth-child(3) {
         margin-top: 4px;
     }
+
+    .container-main{
+        display: grid;
+        grid-template-areas:
+        "navigation navigation"
+        "text text"
+        "image image";
+        grid-template-columns: 1fr;
+    }
+
+    .content{
+        display: grid;
+        grid-template-areas: 
+        "firstbox"
+        "secondbox"
+        "thirdbox";
+        grid-template-columns: 1fr;
+    }
+
 }
