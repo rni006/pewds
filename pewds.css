@@ -29,7 +29,7 @@ nav ul li a {
     font-family: calibri;
     font-size: 1.2em;
     text-decoration: none;
-    color: white;
+    color: #e3ebed;
 	border-bottom: solid 2px rgb(0, 0, 0);
 	margin: 0;
     background-color: transparent;
@@ -49,7 +49,7 @@ ul{
 /* CONTAINER - MAIN PAGE CONTENT */
 
 .container {
-	background: white;
+	background: #e3ebed;
 	border-radius: 2px;
 	display: inline-block;
 	position: relative;
@@ -67,6 +67,10 @@ img{
 	width: 100%;
 }
 
+footer{
+	height: 10%;
+	text-align: center;
+}
 
 @media (min-width: 600px){
 	.container{

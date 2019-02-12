@@ -14,9 +14,15 @@ body {
     padding: 0;
     width: 100%;
     height: 100vh;
-    font-family: Poppins;
+    font-family: 'Titillium Web', sans-serif;
     font-weight: 400;
 }
+
+h1 {
+	font-size: 47px;
+	text-transform: uppercase;
+}
+
 .container-main {
 	display: grid;
     grid-template-areas: 
@@ -36,6 +42,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
 }
+
  nav{
      grid-area: navigation;
  }
@@ -47,15 +54,38 @@ body {
 
   #mainpicpic {
     grid-area: picture;
+    
   }
-  #fistbox{
+  #firstbox{
       grid-area: firstbox;
+      padding: 2px 16px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      margin: 1.5em;
   }
+
   #secondbox{
       grid-area: secondbox;
+      padding: 2px 10px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      margin: 1.5em;
+
   }
   #thirdbox{
       grid-area: thirdbox;
+      padding: 2px 16px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      margin: 1.5em;
+  }
+
+.informative{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+  .info img{
+      width: 100%;
   }
 
   #home{
@@ -156,8 +186,16 @@ nav ul li a {
 /* MEDIA TAGS */
 
 @media screen and (max-width: 864px) {
+
+    h1{
+        font-size: 40px;
+        margin: 0.3em;
+    }
+
     .logo {
-        padding: 0;
+        position:absolute;
+        top: 0;
+        left: 0;
     }
 
     .nav-wrapper {
@@ -259,7 +297,7 @@ nav ul li a {
         "text text"
         "image image";
         grid-template-columns: 1fr;
-    }
+        }
 
     .content{
         display: grid;
